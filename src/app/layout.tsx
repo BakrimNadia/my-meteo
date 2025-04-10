@@ -19,9 +19,10 @@ export default function RootLayout({
       <body>
         <ReduxProvider>
         {children}
+        <Footer />
         </ReduxProvider>
       </body>
-      <Footer />
+      
     </html>
   );
 }
