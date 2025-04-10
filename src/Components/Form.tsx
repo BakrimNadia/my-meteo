@@ -10,11 +10,11 @@ export function Form() {
     const [inputValue, setInputValue] = useState('');
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen">
-            <h1 className="text-5xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-yellow-500 to-orange-500 drop-shadow-lg mb-4">
+        <div className="flex flex-col items-center justify-center mt-10">
+            <h1 className="mt-10 text-5xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-yellow-500 to-orange-500 drop-shadow-lg mb-4">
                 Quel temps fait-il aujourd&apos;hui?
             </h1>
-            <div className=" p-6 rounded-lg shadow-xl w-80">
+            <div className="p-6 rounded-lg shadow-xl w-80">
                <form
       onSubmit={(e) => {
         e.preventDefault();

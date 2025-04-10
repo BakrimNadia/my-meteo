@@ -7,11 +7,11 @@ import { CityWeather } from './CityWeather';
 export default function Citylist() {
   const cities = useAppSelector((state: RootState) => state.cities);
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-            <h1 className="text-3xl font-bold underline mb-4">
-                Liste des villes
+        <div className="flex flex-col items-center justify-center mt-10">
+            <h1 className="text-3xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-b from-yellow-500 to-orange-500 mb-4 mt-10">
+                Liste des villes recherchées
             </h1>
-            <div className="bg-white p-6 rounded-lg shadow-md w-80">
+            <div className="bg-gray-300 p-6 text-center rounded-lg shadow-xl w-80">
       {cities.map((city) => (
         <CityWeather key={city.name} city={city} />
       ))}
