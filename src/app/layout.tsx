@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ReduxProvider } from './providers';
+import { Footer } from "@/Components/Footer";
 
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
         {children}
         </ReduxProvider>
       </body>
+      <Footer />
     </html>
   );
 }

@@ -12,7 +12,6 @@ export default function Home() {
       </h1>
       <Form />
       <Citylist />
-      <Footer />
     </div>
   );
 }
