@@ -1,6 +1,6 @@
 import { createReducer, createAction } from '@reduxjs/toolkit';
 import thunkFetchMeteo from './thunkFetchMeteo';
-import { ICity } from '../../types/city';
+import type { ICity } from '../../@types/city';
 
 // -- STATE INITIAL --
 interface CityState {

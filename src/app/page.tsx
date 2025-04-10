@@ -1,5 +1,6 @@
-import { City } from "@/Components/City";
-import { CityList } from "@/Components/Citylist";
+'use client";'
+
+import Citylist from "@/Components/Citylist";
 import { Form } from "@/Components/Form";
 
 export default function Home() {
@@ -9,8 +10,7 @@ export default function Home() {
         Votre météo du jour
       </h1>
       <Form />
-      <City />
-      <CityList />
+      <Citylist />
       
     </div>
   );
