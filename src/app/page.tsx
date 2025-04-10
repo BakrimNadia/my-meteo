@@ -6,8 +6,8 @@ import { Form } from "@/Components/Form";
 export default function Home() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">
-        Votre météo du jour
+      <h1 className="text-3xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-b from-yellow-500 to-orange-500">
+        Bienvenue dans l&apos;application météo
       </h1>
       <Form />
       <Citylist />

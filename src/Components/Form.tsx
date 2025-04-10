@@ -10,11 +10,11 @@ export function Form() {
     const [inputValue, setInputValue] = useState('');
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-            <h1 className="text-3xl font-bold underline mb-4">
-                Formulaire de recherche
+        <div className="flex flex-col items-center justify-center h-screen">
+            <h1 className="text-5xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-yellow-500 to-orange-500 drop-shadow-lg mb-4">
+                Quel temps fait-il aujourd&apos;hui?
             </h1>
-            <div className="bg-white p-6 rounded-lg shadow-md w-80">
+            <div className=" p-6 rounded-lg shadow-xl w-80">
                <form
       onSubmit={(e) => {
         e.preventDefault();
@@ -23,8 +23,8 @@ export function Form() {
       }}
                     className="flex flex-col items-center"
                 >
-                    <label className="mb-2 text-lg font-semibold">
-                        Entrez le nom de la ville:
+                    <label className="mb-2 text-lg font-bold text-transparent bg-clip-text bg-gradient-to-b from-yellow-500 to-orange-500">
+                        Météo par ville:
                     </label>
                     <input
                         type="text"
@@ -35,7 +35,7 @@ export function Form() {
                     />            
             <button
                  type="submit"
-                className="bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600"
+                className="bg-gradient-to-b from-blue-300 to-gray-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600"
             >
                 Rechercher
             </button>
