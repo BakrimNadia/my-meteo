@@ -1,6 +1,7 @@
 'use client";'
 
 import Citylist from "@/Components/Citylist";
+import { Footer } from "@/Components/Footer";
 import { Form } from "@/Components/Form";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       </h1>
       <Form />
       <Citylist />
-      
+      <Footer />
     </div>
   );
 }
